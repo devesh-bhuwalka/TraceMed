@@ -1,0 +1,30 @@
+/* Horizontal rule with enhanced styling */
+hr {
+    position: relative;
+    margin: 20px auto; /* Center align the hr and replace 'top' for better control */
+    border: none;
+    height: 12px;
+    background: linear-gradient(to right, #000, #333); /* Add a gradient for a modern look */
+    border-radius: 6px; /* Soften the edges */
+    width: 80%; /* Make it responsive by limiting width */
+}
+
+/* Waiting text styling with responsiveness */
+.wait {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem; /* Adjust font size for better readability */
+    font-weight: bold; /* Add emphasis */
+    color: #555; /* Slightly softer color for a cleaner look */
+    animation: fadeIn 1.5s ease-in-out; /* Add a subtle fade-in effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

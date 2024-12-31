@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #3498db; /* Sky blue for primary accents */
+    --secondary-color: #87cefa; /* Light sky blue for a softer background */
+    --background-gradient: linear-gradient(135deg, #a7d8f2, #f0f8ff); /* Soft blue gradient */
+    --card-bg: #ffffff; /* White background for the card */
+    --text-color: #2c3e50; /* Dark text for readability */
+    --accent-color: #2980b9; /* Slightly darker blue for hover */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Light shadow for card */
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: var(--background-gradient); /* Sky blue gradient */
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.supply-chain-tracer {
+    max-width: 800px; /* Wider content */
+    margin: 50px auto;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px var(--shadow-color);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 40px; /* Increased padding for breathing room */
+}
+
+/* Hover effect for the card */
+.supply-chain-tracer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+/* Header */
+.supply-chain-tracer .header {
+    background-color: var(--primary-color); /* Sky blue */
+    color: var(--card-bg);
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem; /* Larger font for header */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* Menu */
+.supply-chain-tracer .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.supply-chain-tracer .menu button {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    border: none;
+    padding: 15px 25px; /* Increased padding for buttons */
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.supply-chain-tracer .menu button:hover {
+    background-color: var(--accent-color); /* Slightly darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* Footer */
+.supply-chain-tracer .footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .supply-chain-tracer {
+        margin: 20px auto;
+        max-width: 90%; /* Maintain responsive design for small screens */
+        padding: 20px; /* Less padding for smaller screens */
+    }
+
+    .supply-chain-tracer .menu {
+        gap: 15px;
+    }
+
+    .supply-chain-tracer .menu button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}

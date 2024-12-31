@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6; /* Improve readability */
+}
+
+h1, h3, h4, h5 {
+    color: #2a9d8f;
+    font-weight: bold; /* Emphasize headings */
+}
+
+h1.wait {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Container */
+.container-xl {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for modern look */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container-xl:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Add interaction */
+}
+
+/* Section and Article */
+section.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+article {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Interactive depth */
+    border-color: #2a9d8f; /* Subtle highlight */
+}
+
+article h3, article h4 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #2a9d8f;
+}
+
+article p, span {
+    font-size: 1rem;
+    color: #555; /* Softer text color */
+}
+
+/* Navigation and Buttons */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhance interactivity */
+}
+
+.btn-outline-success {
+    background-color: #2a9d8f;
+}
+
+.btn-outline-success:hover {
+    background-color: #21867a;
+}
+
+.btn-outline-danger {
+    background-color: #e63946;
+}
+
+.btn-outline-danger:hover {
+    background-color: #c92b37;
+}
+
+/* Arrow Styling */
+span {
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+span:hover {
+    transform: rotate(10deg); /* Add fun interaction */
+    color: #2a9d8f;
+}
+
+/* Form Styling */
+input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 4px rgba(42, 157, 143, 0.5); /* Focus glow effect */
+}
+
+button {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a9d8f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #21867a;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section.row {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}

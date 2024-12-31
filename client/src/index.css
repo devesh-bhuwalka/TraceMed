@@ -1,0 +1,106 @@
+/* Root and Body Styling */
+body {
+    font-family: 'Inter', Arial, sans-serif; /* Modernize font choice */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40; /* Unified text color */
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* App Container */
+.app-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhance shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-container:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Larger title for better focus */
+    color: #343a40;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500; /* Add emphasis */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons for smaller screens */
+    }
+}
